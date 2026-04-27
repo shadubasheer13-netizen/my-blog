@@ -5,13 +5,13 @@ function Post ({posts}){
     const {id} = useParams()
     const post = posts[id]
     if (!post) {
-        return <h2>nothing to read</h2>
+        return <h2>NO POSTES YET</h2>
     }
     return(
         <div>
             <h1>{post.title}</h1>
             <p>{post.content}</p>
-            <Link to={"/"}>GO TO 🥸🥸 HOME</Link>
+            <Link to={"/"}>GO TO HOME</Link>
         </div>
     )
 }

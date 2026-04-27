@@ -18,18 +18,18 @@ function AddPost({setPosts}){
 
     return(
        <div> 
-        <h1>write here</h1>
+        <h1>CREATE YOUR BLOG POST</h1>
         <input
         type="text"
-        placeholder="heading"
+        placeholder="TITLE"
         value={title}
         onChange={(e) => setTitle(e.target.value)}/>
         <textarea
-        placeholder="story"
+        placeholder="CONTENT"
         value={content}
         onChange={(e) => setContent(e.target.value)}
         />
-        <button onClick={handleSubmit}>save</button>
+        <button onClick={handleSubmit}>SAVE </button>
        </div> 
     )
 }
